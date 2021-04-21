@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.rsb.qa.testcases.LoginPageTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 26.28 sec <<< FAILURE!
+loginPageTitleTest(com.rsb.qa.testcases.LoginPageTest)  Time elapsed: 0.092 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Facebook - Log In or Sign Up] but found [Airline Tickets & Flights: Book Direct with Delta Air Lines - Official Site]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.rsb.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:31)
+
+loginTest(com.rsb.qa.testcases.LoginPageTest)  Time elapsed: 10.607 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=login
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C5UTR5O', ip: '192.168.1.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.sendKeys(Unknown Source)
+	at com.rsb.qa.pages.LoginPage.login(LoginPage.java:35)
+	at com.rsb.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:37)
+
